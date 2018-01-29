@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="gameZone">
+	    <item>微信1区</item>  
+	    <item>微信2区</item> 
+	    <item>QQ1区</item>  
+	    <item>QQ2区</item> 
+    </string-array>
+</resources>

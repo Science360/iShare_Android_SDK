@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:state_enabled="true" android:drawable="@drawable/gold2" />
+    <item android:state_hovered="true" android:drawable="@drawable/gold1" />
+    <item android:drawable="@drawable/gold3" android:state_enabled="false" />
+    <item android:drawable="@drawable/gold3" android:state_enabled="true" android:state_window_focused="false"/>  
+</selector>

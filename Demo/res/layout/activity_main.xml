@@ -1,0 +1,412 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.kuketech.ishare.MainActivity" >
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+	
+    <EditText
+        android:id="@+id/money"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/recharge"
+        android:layout_alignBottom="@+id/recharge"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/recharge"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:gravity="center_vertical|left"
+        android:hint="充值金额"
+        android:inputType="number"
+        android:text="100"
+        android:textColor="#fdf5f5" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/occupation"
+        android:layout_alignBottom="@+id/occupation"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/occupation"
+        android:text="游戏职业："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#39342a" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/money"
+        android:layout_alignBottom="@+id/money"
+        android:layout_alignLeft="@+id/TextView04"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="￥"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fed359" />
+
+    <EditText
+        android:id="@+id/playerAcc"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/TextView01"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="用户登录账户"
+        android:inputType="textPhonetic"
+        android:text="aaaaaa"
+        android:textColor="#fdf5f5" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/playerAcc"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/TextView01"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="输入手机号"
+        android:inputType="textPhonetic"
+        android:text="13300000000"
+        android:textColor="#fdf5f5" />
+
+    <Button
+        android:id="@+id/playercenter"
+        style="@drawable/btn_style"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style"
+        android:text="个人中心"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#39342a" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/occupation"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/money"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="输入昵称"
+        android:inputType="textPhonetic"
+        android:text="浪子燕青"
+        android:textColor="#fdf5f5" />
+
+    <EditText
+        android:id="@+id/occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nickname"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="游戏职业"
+        android:inputType="textPhonetic"
+        android:text="战士"
+        android:textColor="#fdf5f5" />
+
+    <Button
+        android:id="@+id/recharge"
+        style="@drawable/btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/playercenter"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_style"
+        android:text="充值"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#39342a" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        style="@drawable/spinner_style"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/TextView03"
+        android:background="@drawable/dropdown8"
+        android:entries="@array/gameZone"
+        android:popupBackground="@drawable/dropdown9"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/regist"
+        style="@drawable/btn_style"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/recharge"
+        android:layout_alignLeft="@+id/TextView03"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toLeftOf="@+id/playercenter"
+        android:background="@drawable/btn_style"
+        android:text="玩家注册"
+        android:textColor="#39342a"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/playerAcc"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="玩家账号："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#39342a" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="游戏大区："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#39342a" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nickname"
+        android:layout_alignBottom="@+id/nickname"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="游戏昵称："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#39342a" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toLeftOf="@+id/phone"
+        android:text="电话号码："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#39342a" />
+
+    <EditText
+        android:id="@+id/ipEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameremark"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addRole"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="服务器IP"
+        android:inputType="textUri"
+        android:text="10.1.12.4"
+        android:textColor="#fdf5f5" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ipEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="服务器IP："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#39342a" />
+
+    <Button
+        android:id="@+id/addRole"
+        style="@drawable/btn_style"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/gameremark"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style"
+        android:text="新建游戏角色"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#39342a" />
+
+    <EditText
+        android:id="@+id/gameremark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/occupation"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/TextView08"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="游戏备注"
+        android:inputType="textPhonetic"
+        android:text="100级可转生"
+        android:textColor="#fdf5f5" />
+
+    <EditText
+        android:id="@+id/rolelevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gameremark"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/occupation"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="游戏角色等级"
+        android:inputType="textPhonetic"
+        android:text="95级"
+        android:textColor="#fdf5f5" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rolelevel"
+        android:layout_alignBottom="@+id/rolelevel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toLeftOf="@+id/rolelevel"
+        android:text="角色等级："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#39342a" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gameremark"
+        android:layout_alignBottom="@+id/gameremark"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toLeftOf="@+id/gameremark"
+        android:text="备注信息："
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#39342a" />
+
+    <TextView
+        android:id="@+id/TextView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="545dp"
+        android:text="版本信息"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/wetchatAppId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ipEdit"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/TextView07"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="微信APPID"
+        android:inputType="textUri"
+        android:textColor="#fdf5f5" />
+
+    <EditText
+        android:id="@+id/QQAppId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/wetchatAppId"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/TextView07"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="QQAppId"
+        android:inputType="textUri"
+        android:textColor="#fdf5f5" />
+
+    <EditText
+        android:id="@+id/SinaWeiboAppid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/QQAppId"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/TextView07"
+        android:background="@drawable/border_style"
+        android:ems="10"
+        android:hint="SinaWeiboAppid"
+        android:inputType="textUri"
+        android:textColor="#fdf5f5" />
+
+</RelativeLayout>
+    
+</ScrollView>
